@@ -31,3 +31,20 @@ nomi.forEach(
 );
 
 console.log(valoriTra)
+
+
+let valoriFra = nomi.filter(
+    (element, index) => {
+
+        if(index >= min && index <= max){
+            
+            console.log(element)
+
+            return true
+        }
+
+        return false
+    }
+)
+
+console.log(valoriFra)
