@@ -1,5 +1,5 @@
 // Snack2
-// Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+// Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli_subiti.
 // Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
 // Generare numeri random al posto degli 0 nelle proprietà:
 // Punti fatti e falli subiti.
@@ -9,38 +9,38 @@ let squadreCalcio = [
 
 {
     'nome' : 'Roma',
-    'punti fatti' : 0,
-    'falli subiti' : 0,
+    'punti_fatti' : 0,
+    'falli_subiti' : 0,
 },
 
 {
     'nome' : 'Juventus',
-    'punti fatti' : 0,
-    'falli subiti' : 0,
+    'punti_fatti' : 0,
+    'falli_subiti' : 0,
 },
 
 {
     'nome' : 'Fiorentina',
-    'punti fatti' : 0,
-    'falli subiti' : 0,
+    'punti_fatti' : 0,
+    'falli_subiti' : 0,
 },
 
 {
     'nome' : 'Foggia',
-    'punti fatti' : 0,
-    'falli subiti' : 0,
+    'punti_fatti' : 0,
+    'falli_subiti' : 0,
 },
 
 {
     'nome' : 'Termoli',
-    'punti fatti' : 0,
-    'falli subiti' : 0,
+    'punti_fatti' : 0,
+    'falli_subiti' : 0,
 },
 
 {
     'nome' : 'Bari',
-    'punti fatti' : 0,
-    'falli subiti' : 0,
+    'punti_fatti' : 0,
+    'falli_subiti' : 0,
 }
 
 ]
@@ -50,8 +50,29 @@ function getRandomInt(max) {
 }
 
 for (let i = 0; i < squadreCalcio.length; i++) {
-    let falli = getRandomInt(40);
-    
+
+    squadreCalcio[i]["falli_subiti"] = getRandomInt(40);
+    squadreCalcio[i]["punti_fatti"] = getRandomInt(80);
     
 }
 
+console.log(squadreCalcio)
+
+let nomiFalli = [];
+
+for (let i = 0; i < squadreCalcio.length; i++) {
+
+    let element = squadreCalcio[i];
+
+    let {nome,falli_subiti} = element;
+   
+    nomiFalli.push(
+        {
+            nome,
+            falli_subiti, 
+        }
+    );
+    
+}
+
+console.log(nomiFalli)
