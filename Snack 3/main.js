@@ -4,5 +4,30 @@
 // Creiamo un nuovo array contenente i valori che hanno la posizione compresa tra i due numeri.
 // Eseguiamo questo esercizio prima con forEach e poi con filter.
 
-const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+const nomi = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 
+let min = 4;
+
+let max = 2;
+
+let valoriTra = [];
+
+nomi.forEach(
+    (element, index) => {
+
+        console.log(element,index)
+
+        if(index >= min && index <= max){
+
+            valoriTra.push(`element`);
+            console.log(valoriTra)
+
+            return valoriTra;
+
+        } 
+
+            
+    }
+);
+
+console.log(valoriTra)
