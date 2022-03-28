@@ -42,3 +42,17 @@ let students = [
   );
 
   console.log(votiSettanta)
+
+
+  let secchioni = students.filter(
+    (element) => {
+
+      if(element.grades > 70  && element.id > 120 ){
+          return true
+      }
+          return false
+
+    }
+);
+
+console.log(secchioni)
