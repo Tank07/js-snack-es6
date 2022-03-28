@@ -60,7 +60,9 @@ for (let i = 0; i < bici.length; i++) {
 
 console.log(pesominore)
 
-// document.getElementById("esito").innerHTML += `La bici con peso minore è ${x[`nome`]} con il peso di ${pesominore}`;
+const {nome, peso} = pesominore;
+const pesominoreContainer = document.getElementById(`esito`);
 
-// Da finire template literal
+pesominoreContainer.innerHTML = `<div>${peso} ${nome}</div>`
+
 
