@@ -22,10 +22,23 @@ let students = [
 
           console.log(maiusc);
 
-          document.getElementById("targhe").innerHTML += `
+          document.getElementById("targhe").innerHTML +=
+          
+          `<p>${maiusc}</p>`
 
-          <p>${maiusc}</p>
-
-          `
       }
-  )
+  );
+
+
+  let votiSettanta = students.filter(
+      (element) => {
+
+        if(element.grades > 70){
+            return true
+        }
+            return false
+
+      }
+  );
+
+  console.log(votiSettanta)
