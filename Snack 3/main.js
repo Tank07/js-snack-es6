@@ -15,18 +15,12 @@ let valoriTra = [];
 nomi.forEach(
     (element, index) => {
 
-        console.log(element,index)
-
         if(index >= min && index <= max){
 
-            valoriTra.push(`element`);
-            console.log(valoriTra)
-
-            return valoriTra;
+            valoriTra.push(element);
 
         } 
-
-            
+   
     }
 );
 
